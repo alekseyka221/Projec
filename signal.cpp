@@ -9,7 +9,7 @@ int main(int argc, char* argv[]) {
   f.close();
 
   signal(SIGTERM, SIG_IGN);
-  signal(SIGKILL, SIG_IGN);
+  signal(SIGINT, SIG_IGN);
 
   while (true)
     sleep(1);
