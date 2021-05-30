@@ -4,12 +4,12 @@
 #include <fstream>
 
 int main(int argc, char* argv[]) {
-  std::ofstream f("/tmp/pid_stepik");
+  std::ofstream f("/home/box/pid");
   f << getpid();
   f.close();
 
   signal(SIGTERM, SIG_IGN);
-  signal(SIGABRT, SIG_IGN);
+  signal(SIGKILL, SIG_IGN);
 
   while (true)
     sleep(1);
