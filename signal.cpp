@@ -12,7 +12,7 @@ int main(int argc, char* argv[]) {
   signal(SIGINT, SIG_IGN);
 
   while (true)
-    sleep(1);
+    sleep(1000);
 
   return 0;
 }
